@@ -11,3 +11,10 @@ Future deploy with Netlify.
 
 ## The testing continues
 Trying to finalise git and then will set-up Netlify.
+
+## Deploying with Netlify
+- Successfully changed DNS namesaervers to point to Netlify.
+- Successfully enabled https.
+- Netlify domain works and shows the website.
+- BUT my domain doesn't seem to work yet... Maybe needs more time for the nameservers to refresh on the Netlify's part? 
+
