@@ -7,3 +7,4 @@ draft: false
 # Hello world
 ## This my first post
 A new blog site built with Hugo.
+Future deploy with Netlify.
