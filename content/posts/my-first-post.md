@@ -8,3 +8,6 @@ draft: false
 ## This my first post
 A new blog site built with Hugo.
 Future deploy with Netlify.
+
+## The testing continues
+Trying to finalise git and then will set-up Netlify.
