@@ -1,4 +1,4 @@
 baseURL = "https://al3xis.xyz/"
 languageCode = "en-us"
 title = "All the XYZs by Al3xis"
-theme = "ananke"
+theme = "gohugo-theme-ananke"
