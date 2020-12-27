@@ -14,7 +14,8 @@
       
       <guid>https://al3xis.xyz/posts/my-first-post/</guid>
       <description>Hello world This my first post A new blog site built with Hugo. Future deploy with Netlify.
-The testing continues Trying to finalise git and then will set-up Netlify.</description>
+The testing continues Trying to finalise git and then will set-up Netlify.
+Deploying with Netlify  Successfully changed DNS namesaervers to point to Netlify. Successfully enabled https. Netlify domain works and shows the website. BUT my domain doesn&amp;rsquo;t seem to work yet&amp;hellip; Maybe needs more time for the nameservers to refresh on the Netlify&amp;rsquo;s part?</description>
     </item>
     
   </channel>
