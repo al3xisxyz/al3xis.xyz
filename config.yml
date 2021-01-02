@@ -1,5 +1,5 @@
 baseURL: "https://al3xis.xyz/"
-title: Al3xis
+title: Al3xis.xyz
 paginate: 8
 theme: hugo-PaperMod
 enableInlineShortcodes: true
