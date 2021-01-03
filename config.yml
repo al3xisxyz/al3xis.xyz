@@ -8,6 +8,8 @@ enableRobotsTXT: true
 
 # googleAnalytics: UA-123-45
 
+disqusShortname: al3xis
+
 minify:
     disableXML: true
     # minifyOutput: true
@@ -40,12 +42,13 @@ outputs:
 params:
     env: production
     description: "All the XYZs by Al3xis"
-    author: Me
+    author: Al3xis
     # author: ["Me", "You"] # multiple authors
     ShowReadingTime: true
     defaultTheme: auto
     ShowShareButtons: true
     displayFullLangName: true
+    comments: true
     # images: ""
     # assets:
     #   favicon: '<path / external url>'
