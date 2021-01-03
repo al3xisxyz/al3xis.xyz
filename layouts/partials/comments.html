@@ -3,10 +3,24 @@
 {{ if .Site.DisqusShortname }}<div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
+<<<<<<< HEAD
     this.page.url = '{{ .Permalink }}';
     this.page.identifier = '{{ .Permalink }}';
     this.page.title = '{{ .Title }}';
     };
+=======
+    
+    this.page.url = '{{ .Permalink }}';  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = '{{ .Permalink }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    this.page.title = '{{ .Title }}';
+    };
+    /* // From Hugo template disqus.html:
+    {{with .Params.disqus_identifier }}this.page.identifier = '{{ . }}';{{end}}
+    {{with .Params.disqus_title }}this.page.title = '{{ . }}';{{end}}
+    {{with .Params.disqus_url }}this.page.url = '{{ . | html  }}';{{end}}
+    };
+    */
+>>>>>>> c427ee0afe7d9b129915d1e0e553c99ef61bb2fc
     (function() {
         if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
             document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
