@@ -1,6 +1,9 @@
 ---
 title: "My First Post"
 date: 2020-12-25T20:15:54+01:00
+tags: []
+featured_image: "/images/bg-drone-home1-1000px.jpg"
+description: ""
 draft: false
 ---
 
