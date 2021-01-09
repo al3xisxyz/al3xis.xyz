@@ -9,14 +9,14 @@ draft: false
 
 ## Create comments file
 First create a html file in:
-layouts/partials/comments.html
-This is applicable mostly for the PaperMod theme. Other themes usually use a disqus.html file. It is important to name the file in the right way so your theme will recognise it. Check the documentation of your theme, in my caswe the PaperMod theme documentation about comments is here: https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-features/#comments
+`layouts/partials/comments.html`
+This is applicable mostly for the PaperMod theme. Other themes usually use a disqus.html file. It is important to name the file in the right way so your theme will recognise it. Check the documentation of your theme, in my case the PaperMod theme documentation about comments is here: https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-features/#comments
 
 
 ## Hugo Disqus template
-Copy from Hugo repository tpl/tplimpl/embedded/templates/disqus.html here: https://github.com/gohugoio/hugo/blob/edc5c4741caaee36ba4d42b5947c195a3e02e6aa/tpl/tplimpl/embedded/templates/disqus.html
+Copy from Hugo repository [tpl/tplimpl/embedded/templates/disqus.html](https://github.com/gohugoio/hugo/blob/edc5c4741caaee36ba4d42b5947c195a3e02e6aa/tpl/tplimpl/embedded/templates/disqus.html)
 
-Add all the lines in the previously created comments.html file
+Add all the lines in the previously created `comments.html` file
 
 I replaced the lines:
 {{< highlight html >}}
