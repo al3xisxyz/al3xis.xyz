@@ -4,7 +4,7 @@ date: 2021-02-16T11:50:27+01:00
 tags: [Hugo, Git, Netlify]
 featured_image: ""
 description: "This is guide/cheatsheet with all the steps and commands to install Hugo, Git and deploy with Netlify."
-draft: true
+draft: false
 ---
 
 # Quickguide - Hugo first setup
