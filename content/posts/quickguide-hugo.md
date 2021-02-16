@@ -100,9 +100,14 @@ git config --get user.email
 
 Firstly, create a [GitHub account](https://github.com/join).
 
-- Create a new repository on GitHub, or
+Then you can start working on a repository by choosing one of the three options below.
 
-- Create a new repository on the command line and push to GitHub, or
+- Create a new repository on GitHub and clone it locally so you can start developing it:
+```
+git clone git@github.com:al3xisxyz/myRepository.git
+```
+
+- Create a new repository on the command line and push it to GitHub:
 ```
 echo "# myRepository" >> README.md
 git init
@@ -113,7 +118,7 @@ git remote add origin git@github.com:al3xisxyz/myRepository.git
 git push -u origin main
 ```
 
-- Push an existing repository from the command line
+- Push an existing repository on your local machine from the command line:
 ```
 git remote add origin git@github.com:al3xisxyz/myRepository.git
 git branch -M main
