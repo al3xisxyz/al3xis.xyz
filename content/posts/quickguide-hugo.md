@@ -99,12 +99,12 @@ First create a GitHub account.
 
 Create a new repository on the command line:
 ```
-echo "# anthista.se" >> README.md
+echo "# myRepository" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin git@github.com:al3xisxyz/anthista.se.git
+git remote add origin git@github.com:al3xisxyz/myRepository.git
 git push -u origin main
 ```
 
