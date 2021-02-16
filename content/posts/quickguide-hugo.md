@@ -19,19 +19,24 @@ There are many ways to install Hugo described under [Hugo installation documenta
 
 My preferred method to install Hugo is with snaps:
 
-`snap install hugo`
+```
+snap install hugo
+```
 
 Verify the installation and check the version:
 
-`hugo version`
+```
+hugo version
+```
 
 ***
 
 ## New Hugo site
 
 Navigate to the folder where you want Hugo to create your site's folder. For example in `/webdev/sites`
-
-`hugo new site mywebsite`
+```
+hugo new site mywebsite
+```
 
 This will create a new folder with the hugo structure in it `/webdev/sites/mywebsite`
 
@@ -41,13 +46,16 @@ This will create a new folder with the hugo structure in it `/webdev/sites/myweb
 
 [Find a Hugo theme](https://themes.gohugo.io) you like and add it to your themes folder. I chose here the [PaperMod theme](https://themes.gohugo.io/hugo-papermod/) ([PaperMod installation documentation](https://github.com/adityatelange/hugo-PaperMod/wiki/Installation))
 
-`git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod --depth=1`
-
-`git submodule update --init --recursive # needed when you reclone your repo (submodules may not get cloned automatically)`
+```
+git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod --depth=1
+git submodule update --init --recursive # needed when you reclone your repo (submodules may not get cloned automatically)
+```
 
 Update the theme when needed with:
 
-`git submodule update --remote --merge`
+```
+git submodule update --remote --merge
+```
 
 ***
 
@@ -58,8 +66,9 @@ Update the theme when needed with:
 This will assume an operating system based on Ubuntu linux. For other operating systems check the [Git download page](https://git-scm.com/downloads)
 
 First, let's check if Git is already installed and what version it is:
-
-`git --version`
+```
+git --version
+```
 
 [Git version 2.28](https://github.blog/2020-07-27-highlights-from-git-2-28/) brought many updates including the possibility to change the default branch to something different than just `master`. This is important in order to align with the [GitHub's change in default branch name](https://github.com/github/renaming) from `master` to `main`. 
 
@@ -79,13 +88,17 @@ git config --global user.name "My Name"
 git config --global user.email "myname@email.com"
 ```
 
-And now we can set Git to initialize by default with the branch `main` and thus align with GitHub as mentioned earlier.
-`git config --global init.defaultBranch main`
+And now we can set Git to initialize by default with the branch `main` and thus align with GitHub as mentioned earlier:
+```
+git config --global init.defaultBranch main
+```
 
 We can also enable colors in Git with:
-`git config --global color.ui auto`
+```
+git config --global color.ui auto
+```
 
-Verify new configuration:
+Lastly, verify that your name and email is properly added in the new configuration:
 ```
 git config --get user.name
 git config --get user.email
@@ -93,11 +106,11 @@ git config --get user.email
 
 ### Connect Git with GitHub
 
-First create a GitHub account.
+Firstly, create a [GitHub account](https://github.com/join).
 
-### Create first repository and push to GitHub
+- Create a new repository on GitHub, or
 
-Create a new repository on the command line:
+- Create a new repository on the command line and push to GitHub, or
 ```
 echo "# myRepository" >> README.md
 git init
@@ -108,7 +121,7 @@ git remote add origin git@github.com:al3xisxyz/myRepository.git
 git push -u origin main
 ```
 
-Push an existing repository from the command line:
+- Push an existing repository from the command line
 ```
 git remote add origin git@github.com:al3xisxyz/myRepository.git
 git branch -M main
