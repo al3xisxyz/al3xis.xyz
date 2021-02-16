@@ -16,11 +16,11 @@ Future deploy with Netlify.
 Trying to finalise git and then will set-up Netlify.
 
 ### Deploying with Netlify
-- Successfully changed DNS namesaervers to point to Netlify.
+- Successfully changed DNS nameservers to point to Netlify.
 - Successfully enabled https.
 - Netlify domain works and shows the website.
 - BUT my domain doesn't seem to work yet... Maybe needs more time for the nameservers to refresh on the Netlify's part? 
 
 
 ## It's LIVE!
-It was after all the DNS refresh time from Netlify that was at 1 hour so probably that needed to wait and refresh.
+It was after all, the DNS refresh time from Netlify that was at 1 hour, so probably that needed to wait and refresh. So all in all after changing nameserves to my domain provider it takes approximately 2 hours for the website to be deployed by Netlify.
