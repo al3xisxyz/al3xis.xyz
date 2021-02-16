@@ -1,48 +1,40 @@
 ---
-title: "Quickguide - Hugo, Git, Netlify setup"
+title: "Quickguide - Hugo | Git | Netlify setup"
 date: 2021-02-16T11:50:27+01:00
 tags: [Hugo, Git, Netlify]
 featured_image: ""
-description: "This is guide/cheatsheet with all the steps and commands to install Hugo, Git and deploy with Netlify."
+description: "This is a simple guide/cheatsheet with all the steps and commands to take you from nothing to a FREE published website with Hugo, GitHub and Netlify!"
 draft: false
 ---
 
-# Quickguide - Hugo first setup
+This guide assumes that you already have bought a domain for your website (I recommend [Porkbun](https://porkbun.com/products/domains)). The domain cost is the only cost needed, the rest in this guide are completely **FREE** tools in order to create, host and publish your website!
 
-This is a simple guide for a first time Hugo setup with all the steps and necessary resources to take you from nothing to a published website!
-
-***
+---
 
 ## Hugo installation
 
-There are many ways to install Hugo described under [Hugo installation documentation](https://gohugo.io/getting-started/installing)
+There are many ways to install Hugo described under the [Hugo installation documentation](https://gohugo.io/getting-started/installing)
 
-My preferred method to install Hugo is with snaps:
-
+My preferred method to install Hugo is on Linux with snaps:
 ```
 snap install hugo
 ```
 
 Verify the installation and check the version:
-
 ```
 hugo version
 ```
 
-***
+### New Hugo site
 
-## New Hugo site
-
-Navigate to the folder where you want Hugo to create your site's folder. For example in `/webdev/sites`
+Now, navigate to the folder where you want Hugo to create your website's folder. For example in `/webdev/sites`
 ```
 hugo new site mywebsite
 ```
 
-This will create a new folder with the hugo structure in it `/webdev/sites/mywebsite`
+This will create a new folder for your website with the hugo structure in it `/webdev/sites/mywebsite`
 
-***
-
-## Add a Hugo theme
+### Add a Hugo theme
 
 [Find a Hugo theme](https://themes.gohugo.io) you like and add it to your themes folder. I chose here the [PaperMod theme](https://themes.gohugo.io/hugo-papermod/) ([PaperMod installation documentation](https://github.com/adityatelange/hugo-PaperMod/wiki/Installation))
 
@@ -57,7 +49,7 @@ Update the theme when needed with:
 git submodule update --remote --merge
 ```
 
-***
+---
 
 ## Start Git and connect with GitHub
 
