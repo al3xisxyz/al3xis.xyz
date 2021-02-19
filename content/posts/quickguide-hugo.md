@@ -7,7 +7,7 @@ description: "This is a simple guide/cheatsheet with all the steps and commands 
 draft: false
 ---
 
-This guide assumes that you already have bought a domain for your website (I recommend [Porkbun](https://porkbun.com/products/domains)). The domain cost is the only cost needed, the rest in this guide are completely **FREE** tools in order to create, host and publish your website!
+This guide assumes that you have already bought a domain for your website (I recommend [Porkbun](https://porkbun.com/products/domains) if you want to buy one now). The domain cost is the only cost needed in this guide. To create, host and publish your website is completely **FREE**!
 
 ---
 
@@ -96,18 +96,46 @@ git config --get user.name
 git config --get user.email
 ```
 
+### Create a GitHub account
+
+Create a [GitHub account](https://github.com/join) if you don't have an account yet. Gitlab, Bitbucket and others should work too but might need some different settings comparing to GitHub.
+
+Now [create a new GitHub repository](https://github.com/new) where we will store our Hugo files, for example with a name `myWebsite`. Then we will have a link for the GitHub repository such as `https://github.com/al3xisxyz/myWebsite` which we will use later to connect in our local Git environment.
+
+### Create an SSH key and insert it in GitHub
+
+In order to connect to your GitHub account from your local machine without having to give a username and password everytime then you can setup an SSH key.
+
+I the terminal check if you already have an SSH key:
+```
+ls ~/.ssh/id_rsa.pub
+```
+
+If you get a message `No such file or directory` then create an SSH key by using the email you used to create an account on GitHub:
+```
+ssh-keygen -C myname@email.com
+```
+During the key generation process it will prompt you for a location to save the generated key and ask for a password, but you can just press `Enter` to skip both.
+
+Now we can print the newly made public SSH key in the terminal with:
+```
+cat ~/.ssh/id_rsa.pub
+```
+And copy the output in order to insert it in GitHub by going to your profile image on the top right corner and then `Settings -> SSH and GPG keys -> New SSH key`. Add a title of your choice and paste the key in the field below.
+
+[Test the SSH connection with GitHub](https://docs.github.com/en/github/authenticating-to-github/testing-your-ssh-connection) by entering in your terminal:
+```
+ssh -T git@github.com
+```
+
+If everything is configured correctly you should see:
+> Hi *myname*! You've successfully authenticated, but GitHub does not provide shell access.
+
 ### Connect Git with GitHub
 
-Firstly, create a [GitHub account](https://github.com/join).
+Now we can start working on our Hugo website and push the local files to the GitHub repository.
 
-Then you can start working on a repository by choosing one of the three options below.
-
-- Create a new repository on GitHub and clone it locally so you can start developing it:
-```
-git clone git@github.com:al3xisxyz/myRepository.git
-```
-
-- Create a new repository on the command line and push it to GitHub:
+Create a new repository on the command line and push it to GitHub:
 ```
 echo "# myRepository" >> README.md
 git init
@@ -118,9 +146,14 @@ git remote add origin git@github.com:al3xisxyz/myRepository.git
 git push -u origin main
 ```
 
-- Push an existing repository on your local machine from the command line:
+Create a new repository on GitHub and clone it locally so you can start developing it:
 ```
-git remote add origin git@github.com:al3xisxyz/myRepository.git
-git branch -M main
-git push -u origin main
+git clone git@github.com:al3xisxyz/myRepository.git
 ```
+
+
+---
+
+## Install Visual Studio Code
+
+Now all the configuration is done and we are ready to start editing our Hugo site! The most popular code editor software is [Visual Studio Code](https://code.visualstudio.com/). Just install it, navigate to your folder structure and start editing the files.
