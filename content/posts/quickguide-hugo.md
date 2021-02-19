@@ -27,12 +27,12 @@ hugo version
 
 ### New Hugo site
 
-Now, navigate to the folder where you want Hugo to create your website's folder. For example in `/webdev/sites`
+Now, navigate to the folder where you want Hugo to create your website's folder. For example in `webdev/sites`
 ```
-hugo new site mywebsite
+hugo new site myWebsite
 ```
 
-This will create a new folder for your website with the hugo structure in it `/webdev/sites/mywebsite`
+This will create a new folder for your website with the hugo structure in it `webdev/sites/myWebsite`
 
 ### Add a Hugo theme
 
@@ -74,6 +74,8 @@ sudo apt install git
 
 ### Git configuration
 
+[First-Time Git Setup Documentation](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
+
 Set your name and email in Git:
 ```
 git config --global user.name "My Name"
@@ -100,13 +102,13 @@ git config --get user.email
 
 Create a [GitHub account](https://github.com/join) if you don't have an account yet. Gitlab, Bitbucket and others should work too but might need some different settings comparing to GitHub.
 
-Now [create a new GitHub repository](https://github.com/new) where we will store our Hugo files, for example with a name `myWebsite`. Then we will have a link for the GitHub repository such as `https://github.com/al3xisxyz/myWebsite` which we will use later to connect in our local Git environment.
+Now [create a new GitHub repository](https://github.com/new) where we will store our Hugo files, for example with a name `myWebsite`. Then we will have an SSH link for the GitHub repository such as `git@github.com:myname/myWebsite.git` which we will use later to connect in our local Git environment.
 
 ### Create an SSH key and insert it in GitHub
 
 In order to connect to your GitHub account from your local machine without having to give a username and password everytime then you can setup an SSH key.
 
-I the terminal check if you already have an SSH key:
+In the terminal check if you already have an SSH key:
 ```
 ls ~/.ssh/id_rsa.pub
 ```
@@ -117,11 +119,11 @@ ssh-keygen -C myname@email.com
 ```
 During the key generation process it will prompt you for a location to save the generated key and ask for a password, but you can just press `Enter` to skip both.
 
-Now we can print the newly made public SSH key in the terminal with:
+Now we can print/see the newly made public SSH key in the terminal with:
 ```
 cat ~/.ssh/id_rsa.pub
 ```
-And copy the output in order to insert it in GitHub by going to your profile image on the top right corner and then `Settings -> SSH and GPG keys -> New SSH key`. Add a title of your choice and paste the key in the field below.
+Copy the output in order to insert it in GitHub by going to your profile image on the top right corner and then `Settings -> SSH and GPG keys -> New SSH key`. Add a title of your choice and paste the key in the field below.
 
 [Test the SSH connection with GitHub](https://docs.github.com/en/github/authenticating-to-github/testing-your-ssh-connection) by entering in your terminal:
 ```
@@ -135,25 +137,29 @@ If everything is configured correctly you should see:
 
 Now we can start working on our Hugo website and push the local files to the GitHub repository.
 
-Create a new repository on the command line and push it to GitHub:
+Start Git in the folder with the Hugo files ([check the Git documentation for details](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)). First navigate in the folder `webdev/sites/myWebsite` and then initialize Git, add all files (don't forget the dot `.`), commit the files, choose the branch, connect to the GitHub repository we created earlier and finally push the files up to GitHub:
 ```
-echo "# myRepository" >> README.md
+cd webdev/sites/myWebsite
 git init
-git add README.md
+git add .
 git commit -m "first commit"
 git branch -M main
-git remote add origin git@github.com:al3xisxyz/myRepository.git
+git remote add origin git@github.com:myname/myWebsite.git
 git push -u origin main
 ```
 
-Create a new repository on GitHub and clone it locally so you can start developing it:
+Next time we want to connect to an existing repository with our files on GitHub we can just clone the repository locally to start working on the latest version of the files:
 ```
-git clone git@github.com:al3xisxyz/myRepository.git
+git clone git@github.com:myname/myWebsite.git
 ```
-
 
 ---
 
 ## Install Visual Studio Code
 
-Now all the configuration is done and we are ready to start editing our Hugo site! The most popular code editor software is [Visual Studio Code](https://code.visualstudio.com/). Just install it, navigate to your folder structure and start editing the files.
+Now all the configuration is done and we are ready to start editing our Hugo site! The most popular code editor software is [Visual Studio Code](https://code.visualstudio.com/). Just install it, navigate to your folder structure and start editing the files. Then you can [manage the Git commands straight in Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol).
+
+---
+
+## Connect your GitHub repository to Netlify
+
