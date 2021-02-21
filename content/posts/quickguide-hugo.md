@@ -163,3 +163,16 @@ Now all the configuration is done and we are ready to start editing our Hugo sit
 
 ## Connect your GitHub repository to Netlify
 
+The [Hugo documentation about Netlify](https://gohugo.io/hosting-and-deployment/hosting-on-netlify) is quite nice to follow. 
+
+First [make an account on Netlify](https://app.netlify.com/) and connect it to your GitHub account.
+
+Next we can create a `netlify.toml` file in our Hugo folder. Go to [Configure Hugo Version in Netlify](https://gohugo.io/hosting-and-deployment/hosting-on-netlify#configure-hugo-version-in-netlify) and copy all the contents into your file. You can change the version number if you want in the file. Save it and push it to your GitHub account.
+
+Now from Netlify we can continue and create a `New site from Git`. Choose your new repository when asked and in the last step enter in the field for command `Hugo` and directory `public`.
+
+Our website will deploy now with Netlify. We get a url from Netlify to check our website in the form of `something.netlify.app`. To connect your own domain with Netlify follow [Netlify's instructions on custom domains](https://docs.netlify.com/domains-https/custom-domains/). The instructions will take you to change the nameservers in your domain provider (for example in Porkbun) to specific nameservers from Netlify. This change should take an hour to be register from your domain provider and then another hour from Netlify. So in total 2 hours minimum from the time you change nameservers to Netlify's in your domain provider until you see your website through your domain url. In the meantime you can edit your website and push the changes to GitHub and use Netlify's own url to see your page take shape.
+
+***Done!***
+
+Of course there are plenty more settings in Netlify but the basics are done and you have a working site for **free!** One cool thing I do in Netlify is to have a `dev.mywebsite.com` that takes my Hugo files from a secondary branch `dev` on GitHub and deploy a website with ongoing changes to the `dev.website.com`.
