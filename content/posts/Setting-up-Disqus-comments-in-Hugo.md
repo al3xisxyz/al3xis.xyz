@@ -31,3 +31,5 @@ this.page.url = '{{ .Permalink }}';
 this.page.identifier = '{{ .Permalink }}';
 this.page.title = '{{ .Title }}';
 {{< /highlight >}}
+
+---
