@@ -48,7 +48,7 @@ params:
     defaultTheme: auto
     ShowShareButtons: true
     displayFullLangName: true
-    comments: true
+    comments: false
     # images: ""
     # assets:
     #   favicon: '<path / external url>'

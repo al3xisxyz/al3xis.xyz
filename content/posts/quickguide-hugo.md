@@ -13,11 +13,18 @@ This guide assumes that you have already bought a domain for your website (I rec
 
 ## Hugo installation
 
-There are many ways to install Hugo described under the [Hugo installation documentation](https://gohugo.io/getting-started/installing)
+There are many ways to install Hugo in all major operating systems, described under the [Hugo installation documentation](https://gohugo.io/getting-started/installing)
 
-My preferred method to install Hugo is on Linux with snaps:
+To install Hugo on some of the popular Linux distributions:
 ```
+Debian/Ubuntu based:
 snap install hugo
+
+Arch based:
+pacman -S hugo
+
+Fedora/Red Hat based:
+dnf install hugo
 ```
 
 Verify the installation and check the version:
