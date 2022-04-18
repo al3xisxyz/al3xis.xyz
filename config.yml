@@ -50,6 +50,7 @@ params:
     displayFullLangName: true
     comments: false
     ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
     # images: ""
     # assets:
     #   favicon: '<path / external url>'

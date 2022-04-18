@@ -200,7 +200,45 @@
     <div class="post-meta"><span title='2021-02-16 11:50:27 +0100 CET'>February 16, 2021</span>&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Al3xis
 
 </div>
-  </header> 
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#hugo-installation" aria-label="Hugo installation">Hugo installation</a><ul>
+                        
+                <li>
+                    <a href="#new-hugo-site" aria-label="New Hugo site">New Hugo site</a></li>
+                <li>
+                    <a href="#add-a-hugo-theme" aria-label="Add a Hugo theme">Add a Hugo theme</a></li></ul>
+                </li>
+                <li>
+                    <a href="#start-git-and-connect-with-github" aria-label="Start Git and connect with GitHub">Start Git and connect with GitHub</a><ul>
+                        
+                <li>
+                    <a href="#git-installation" aria-label="Git installation">Git installation</a></li>
+                <li>
+                    <a href="#git-configuration" aria-label="Git configuration">Git configuration</a></li>
+                <li>
+                    <a href="#create-a-github-account" aria-label="Create a GitHub account">Create a GitHub account</a></li>
+                <li>
+                    <a href="#create-an-ssh-key-and-insert-it-in-github" aria-label="Create an SSH key and insert it in GitHub">Create an SSH key and insert it in GitHub</a></li>
+                <li>
+                    <a href="#connect-git-with-github" aria-label="Connect Git with GitHub">Connect Git with GitHub</a></li></ul>
+                </li>
+                <li>
+                    <a href="#install-visual-studio-code" aria-label="Install Visual Studio Code">Install Visual Studio Code</a></li>
+                <li>
+                    <a href="#connect-your-github-repository-to-netlify" aria-label="Connect your GitHub repository to Netlify">Connect your GitHub repository to Netlify</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
   <div class="post-content"><p>This guide assumes that you have already bought a domain for your website (I recommend <a href="https://porkbun.com/products/domains">Porkbun</a> if you want to buy one now). The domain cost is the only cost needed in this guide. To create, host and publish your website is completely <strong>FREE</strong>!</p>
 <hr>
 <h2 id="hugo-installation">Hugo installation<a hidden class="anchor" aria-hidden="true" href="#hugo-installation">#</a></h2>
@@ -419,6 +457,53 @@ git push -u origin main
         }
     })
 
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
 </script>
 </body>
 
