@@ -1,12 +1,48 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on All the XYZs by Al3xis</title>
+    <title>Posts on Al3xis.xyz</title>
     <link>https://al3xis.xyz/posts/</link>
-    <description>Recent content in Posts on All the XYZs by Al3xis</description>
+    <description>Recent content in Posts on Al3xis.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 25 Dec 2020 20:15:54 +0100</lastBuildDate><atom:link href="https://al3xis.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Apr 2022 23:06:05 +0200</lastBuildDate><atom:link href="https://al3xis.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quickguide - Headless Raspberri Pi setup</title>
+      <link>https://al3xis.xyz/posts/quickguide-headless-raspberri-pi/</link>
+      <pubDate>Sun, 17 Apr 2022 23:06:05 +0200</pubDate>
+      
+      <guid>https://al3xis.xyz/posts/quickguide-headless-raspberri-pi/</guid>
+      <description>This is a quick setup cheat sheet to start a headless Raspberry Pi.</description>
+    </item>
+    
+    <item>
+      <title>Quickguide - Hugo | Git | Netlify setup</title>
+      <link>https://al3xis.xyz/posts/quickguide-hugo/</link>
+      <pubDate>Tue, 16 Feb 2021 11:50:27 +0100</pubDate>
+      
+      <guid>https://al3xis.xyz/posts/quickguide-hugo/</guid>
+      <description>This is a simple guide/cheatsheet with all the steps and commands to take you from nothing to a FREE published website with Hugo, GitHub and Netlify!</description>
+    </item>
+    
+    <item>
+      <title>Setting Up Disqus Comments in Hugo</title>
+      <link>https://al3xis.xyz/posts/setting-up-disqus-comments-in-hugo/</link>
+      <pubDate>Sun, 03 Jan 2021 16:50:07 +0100</pubDate>
+      
+      <guid>https://al3xis.xyz/posts/setting-up-disqus-comments-in-hugo/</guid>
+      <description>This guide applies to Hugo themes, such as the PaperMod theme. Depending on your Hugo theme, setting up Disqus or other comment services can differ but it will be very similar to this.</description>
+    </item>
+    
+    <item>
+      <title>PaperMod Theme</title>
+      <link>https://al3xis.xyz/posts/papermod-theme/</link>
+      <pubDate>Sat, 02 Jan 2021 20:17:55 +0100</pubDate>
+      
+      <guid>https://al3xis.xyz/posts/papermod-theme/</guid>
+      <description>The PaperMod theme! Installation Install as a submodule with
+git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/hugo-PaperMod git submodule update --init --recursive  </description>
+    </item>
+    
     <item>
       <title>My First Post</title>
       <link>https://al3xis.xyz/posts/my-first-post/</link>
@@ -15,7 +51,7 @@
       <guid>https://al3xis.xyz/posts/my-first-post/</guid>
       <description>Hello world This my first post A new blog site built with Hugo. Future deploy with Netlify.
 The testing continues Trying to finalise git and then will set-up Netlify.
-Deploying with Netlify  Successfully changed DNS namesaervers to point to Netlify. Successfully enabled https. Netlify domain works and shows the website. BUT my domain doesn&amp;rsquo;t seem to work yet&amp;hellip; Maybe needs more time for the nameservers to refresh on the Netlify&amp;rsquo;s part?</description>
+Deploying with Netlify  Successfully changed DNS nameservers to point to Netlify. Successfully enabled https. Netlify domain works and shows the website. BUT my domain doesn&amp;rsquo;t seem to work yet&amp;hellip; Maybe needs more time for the nameservers to refresh on the Netlify&amp;rsquo;s part?</description>
     </item>
     
   </channel>

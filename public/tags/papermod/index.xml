@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>PaperMod on Al3xis.xyz</title>
+    <link>https://al3xis.xyz/tags/papermod/</link>
+    <description>Recent content in PaperMod on Al3xis.xyz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 03 Jan 2021 16:50:07 +0100</lastBuildDate><atom:link href="https://al3xis.xyz/tags/papermod/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting Up Disqus Comments in Hugo</title>
+      <link>https://al3xis.xyz/posts/setting-up-disqus-comments-in-hugo/</link>
+      <pubDate>Sun, 03 Jan 2021 16:50:07 +0100</pubDate>
+      
+      <guid>https://al3xis.xyz/posts/setting-up-disqus-comments-in-hugo/</guid>
+      <description>This guide applies to Hugo themes, such as the PaperMod theme. Depending on your Hugo theme, setting up Disqus or other comment services can differ but it will be very similar to this.</description>
+    </item>
+    
+  </channel>
+</rss>

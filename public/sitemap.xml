@@ -1,28 +1,60 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://al3xis.xyz/</loc>
-    <lastmod>2020-12-25T20:15:54+01:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2022-04-17T23:06:05+02:00</lastmod>
+  </url><url>
+    <loc>https://al3xis.xyz/posts/</loc>
+    <lastmod>2022-04-17T23:06:05+02:00</lastmod>
+  </url><url>
+    <loc>https://al3xis.xyz/posts/quickguide-headless-raspberri-pi/</loc>
+    <lastmod>2022-04-17T23:06:05+02:00</lastmod>
+  </url><url>
+    <loc>https://al3xis.xyz/tags/raspberry-pi/</loc>
+    <lastmod>2022-04-17T23:06:05+02:00</lastmod>
+  </url><url>
+    <loc>https://al3xis.xyz/tags/</loc>
+    <lastmod>2022-04-17T23:06:05+02:00</lastmod>
+  </url><url>
+    <loc>https://al3xis.xyz/tags/git/</loc>
+    <lastmod>2021-02-16T11:50:27+01:00</lastmod>
+  </url><url>
+    <loc>https://al3xis.xyz/tags/hugo/</loc>
+    <lastmod>2021-02-16T11:50:27+01:00</lastmod>
+  </url><url>
+    <loc>https://al3xis.xyz/tags/netlify/</loc>
+    <lastmod>2021-02-16T11:50:27+01:00</lastmod>
+  </url><url>
+    <loc>https://al3xis.xyz/posts/quickguide-hugo/</loc>
+    <lastmod>2021-02-16T11:50:27+01:00</lastmod>
+  </url><url>
+    <loc>https://al3xis.xyz/tags/disqus/</loc>
+    <lastmod>2021-01-03T16:50:07+01:00</lastmod>
+  </url><url>
+    <loc>https://al3xis.xyz/tags/installation/</loc>
+    <lastmod>2021-01-03T16:50:07+01:00</lastmod>
+  </url><url>
+    <loc>https://al3xis.xyz/tags/papermod/</loc>
+    <lastmod>2021-01-03T16:50:07+01:00</lastmod>
+  </url><url>
+    <loc>https://al3xis.xyz/posts/setting-up-disqus-comments-in-hugo/</loc>
+    <lastmod>2021-01-03T16:50:07+01:00</lastmod>
+  </url><url>
+    <loc>https://al3xis.xyz/posts/papermod-theme/</loc>
+    <lastmod>2021-01-02T20:17:55+01:00</lastmod>
+  </url><url>
     <loc>https://al3xis.xyz/posts/my-first-post/</loc>
     <lastmod>2020-12-25T20:15:54+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://al3xis.xyz/posts/</loc>
-    <lastmod>2020-12-25T20:15:54+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://al3xis.xyz/about/</loc>
+  </url><url>
+    <loc>https://al3xis.xyz/archives/</loc>
+  </url><url>
     <loc>https://al3xis.xyz/categories/</loc>
+  </url><url>
+    <loc>https://al3xis.xyz/search/</loc>
+  </url><url>
+    <loc>https://al3xis.xyz/series/</loc>
   </url>
-  
-  <url>
-    <loc>https://al3xis.xyz/tags/</loc>
-  </url>
-  
 </urlset>

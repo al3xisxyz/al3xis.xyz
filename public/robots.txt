@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://al3xis.xyz/sitemap.xml

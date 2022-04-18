@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Hugo on Al3xis.xyz</title>
+    <link>https://al3xis.xyz/tags/hugo/</link>
+    <description>Recent content in Hugo on Al3xis.xyz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 16 Feb 2021 11:50:27 +0100</lastBuildDate><atom:link href="https://al3xis.xyz/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quickguide - Hugo | Git | Netlify setup</title>
+      <link>https://al3xis.xyz/posts/quickguide-hugo/</link>
+      <pubDate>Tue, 16 Feb 2021 11:50:27 +0100</pubDate>
+      
+      <guid>https://al3xis.xyz/posts/quickguide-hugo/</guid>
+      <description>This is a simple guide/cheatsheet with all the steps and commands to take you from nothing to a FREE published website with Hugo, GitHub and Netlify!</description>
+    </item>
+    
+    <item>
+      <title>Setting Up Disqus Comments in Hugo</title>
+      <link>https://al3xis.xyz/posts/setting-up-disqus-comments-in-hugo/</link>
+      <pubDate>Sun, 03 Jan 2021 16:50:07 +0100</pubDate>
+      
+      <guid>https://al3xis.xyz/posts/setting-up-disqus-comments-in-hugo/</guid>
+      <description>This guide applies to Hugo themes, such as the PaperMod theme. Depending on your Hugo theme, setting up Disqus or other comment services can differ but it will be very similar to this.</description>
+    </item>
+    
+  </channel>
+</rss>
