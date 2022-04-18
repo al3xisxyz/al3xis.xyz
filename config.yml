@@ -49,6 +49,7 @@ params:
     ShowShareButtons: true
     displayFullLangName: true
     comments: false
+    ShowBreadCrumbs: true
     # images: ""
     # assets:
     #   favicon: '<path / external url>'
