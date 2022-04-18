@@ -89,10 +89,18 @@ sudo ufw enable
 ```
 #### Firewall status
 ```
-sudo ufw status
+sudo ufw status #add `verbose` for more info or `numbered` for id numbers
+```
+#### Delete rules
+```
+sudo ufw delete x #where `x` is the number id when doing status numbered
 ```
 #### Enable logs
 ```
 sudo ufw logging on
 ```
 The logs are stored under `/var/log/ufw.log`
+#### Reset UFW
+```
+sudo ufw reset
+```
