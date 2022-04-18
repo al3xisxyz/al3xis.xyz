@@ -4,6 +4,8 @@ date: 2022-04-17T23:06:05+02:00
 tags: [Raspberry Pi]
 featured_image: ""
 description: "This is a quick setup cheat sheet to start a headless Raspberry Pi."
+ShowToc: true
+TocOpen: true
 draft: false
 ---
 

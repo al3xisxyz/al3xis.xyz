@@ -4,6 +4,8 @@ date: 2021-02-16T11:50:27+01:00
 tags: [Hugo, Git, Netlify]
 featured_image: ""
 description: "This is a simple guide/cheatsheet with all the steps and commands to take you from nothing to a FREE published website with Hugo, GitHub and Netlify!"
+ShowToc: true
+TocOpen: true
 draft: false
 ---
 
