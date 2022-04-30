@@ -98,8 +98,8 @@
   "keywords": [
     "Hugo", "PaperMod", "Disqus", "Installation"
   ],
-  "articleBody": "Create comments file First create a html file in: layouts/partials/comments.html This is applicable mostly for the PaperMod theme. Other themes usually use a disqus.html file. It is important to name the file in the right way so your theme will recognise it. Check the documentation of your theme, in my case the PaperMod theme documentation about comments is here: https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-features/#comments\nHugo Disqus template Copy from Hugo repository tpl/tplimpl/embedded/templates/disqus.html\nAdd all the lines in the previously created comments.html file\nI replaced the lines: {{with .Params.disqus_identifier }}this.page.identifier = '{{ . }}';{{end}} {{with .Params.disqus_title }}this.page.title = '{{ . }}';{{end}} {{with .Params.disqus_url }}this.page.url = '{{ . | html }}';{{end}}\nWith these: this.page.url = '{{ .Permalink }}'; this.page.identifier = '{{ .Permalink }}'; this.page.title = '{{ .Title }}';\n ",
-  "wordCount" : "122",
+  "articleBody": "Create comments file First create a html file in: layouts/partials/comments.html This is applicable mostly for the PaperMod theme. Other themes usually use a disqus.html file. It is important to name the file in the right way so your theme will recognise it. Check the documentation of your theme, in my case the PaperMod theme documentation about comments is here: https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-features/#comments\nHugo Disqus template Copy from Hugo repository tpl/tplimpl/embedded/templates/disqus.html\nAdd all the lines in the previously created comments.html file\nI replaced the lines: {{with .Params.disqus_identifier }}this.page.identifier = '{{ . }}';{{end}} {{with .Params.disqus_title }}this.page.title = '{{ . }}';{{end}} {{with .Params.disqus_url }}this.page.url = '{{ . | html }}';{{end}}\nWith these: this.page.url = '{{ .Permalink }}'; this.page.identifier = '{{ .Permalink }}'; this.page.title = '{{ .Title }}';\n If you liked this, consider sending a tip by ko-fi from the button below, and if you want to send me any feedback, you can reach me by email. \n",
+  "wordCount" : "151",
   "inLanguage": "en",
   "datePublished": "2021-01-03T16:50:07+01:00",
   "dateModified": "2021-01-03T16:50:07+01:00",
@@ -217,6 +217,9 @@ This is applicable mostly for the PaperMod theme. Other themes usually use a dis
 </span></span><span style="display:flex;"><span>this.page.identifier = &#39;{{ .Permalink }}&#39;;
 </span></span><span style="display:flex;"><span>this.page.title = &#39;{{ .Title }}&#39;;</span></span></code></pre></div></p>
 <hr>
+<p>If you liked this, consider sending a tip by ko-fi from the button below, and if you want to send me any feedback, you can reach me by <a href="mailto:emailme@al3xis.slmail.me">email</a>.
+<a href="https://ko-fi.com/V7V1CFV13"><img loading="lazy" src="https://ko-fi.com/img/githubbutton_sm.svg" alt="ko-fi"  />
+</a></p>
 
 
   </div>
