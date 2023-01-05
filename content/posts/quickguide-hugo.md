@@ -187,5 +187,5 @@ Our website will deploy now with Netlify. We get a url from Netlify to check our
 Of course there are plenty more settings in Netlify but the basics are done and you have a working site for **free!** One cool thing I do in Netlify is to have a `dev.mywebsite.com` that takes my Hugo files from a secondary branch `dev` on GitHub and deploy a website with ongoing changes to the `dev.mywebsite.com`. This is perfect in order to work on a draft version of the website and see the work take shape without affecting the actual website where people might be visiting. If you are interested in that check [Netlify's documentation on branch deploys](https://docs.netlify.com/site-deploys/overview/#branch-deploy-controls).
 
 ---
-If you liked this, consider sending a tip by ko-fi from the button below, and if you want to send me any feedback, you can reach me by [email](mailto:emailme@al3xis.slmail.me).
+If you liked this, consider sending a tip by ko-fi from the button below, and if you want to send me any feedback, you can reach me by [email](mailto:emailme@al3xis.xyz).
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/V7V1CFV13)

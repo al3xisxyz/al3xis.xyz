@@ -11,7 +11,7 @@
 <meta name="author" content="Al3xis">
 <link rel="canonical" href="https://al3xis.xyz/posts/quickguide-headless-raspberri-pi/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.b4e19c453811e60acfec1f00c15ac2be1c53f6ab90187e684358ce7faaf48bab.css" integrity="sha256-tOGcRTgR5grP7B8AwVrCvhxT9quQGH5oQ1jOf6r0i6s=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.4dcb3c4f38462f66c6b6137227726f5543cb934cca9788f041c087e374491df2.js" integrity="sha256-Tcs8TzhGL2bGthNyJ3JvVUPLk0zKl4jwQcCH43RJHfI="
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.b95bacdc39e37a332a9f883b1e78be4abc1fdca2bc1f2641f55e3cd3dabd4d61.js" integrity="sha256-uVus3DnjejMqn4g7Hni&#43;Srwf3KK8HyZB9V4809q9TWE="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://al3xis.xyz/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://al3xis.xyz/favicon-16x16.png">
@@ -98,7 +98,7 @@
   "keywords": [
     "Raspberry Pi"
   ],
-  "articleBody": "This guide is to make the initial steps from formating the microSD card to having ssh access to a headless Raspberry Pi.\n Headless Raspberry Pi Fresh Installation  Install the rpi-imager. Choose the Raspberry Pi OS Lite (64-bit) Select the microSD card and Write  Prepare the microSD card Before the first boot the microSD card needs a user account and the SSH connection enabled.\nUser account Add a userconf.txt file in the boot folder. In the file include: username:password (your username, followed by a colon, followed by the encrypted password)\nTo generate the encrypted password:\necho 'mypassword' | openssl passwd -6 -stdin Enable SSH Add an empty ssh file in the boot folder Web Server is available at http://localhost:1313/ (bind address 127.0.0.1) Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)\nBoot and SSH into the Raspberry Pi Insert the microSD card and boot the Raspberry Pi with an ethernet cable connected.\nConnect with ssh:\nssh username@192.168.x.x  Adjustments after first boot Change default ssh port sudo nano /etc/ssh/sshd_config Uncomment the #22 and change it to the desired port (i.e. 2234)\nRestart SSH sudo systemctl restart ssh Exit \u0026 connect with ssh again:\nexit ssh username@192.168.x.x -p 2234  Install Firewall UFW sudo apt install ufw Allow a port sudo ufw allow 2234 Deny a port sudo ufw deny 22 Limit a port sudo ufw limit ssh/tcp Start UFW sudo ufw enable Firewall status sudo ufw status #add `verbose` for more info or `numbered` for id numbers Delete rules sudo ufw delete x #where `x` is the number id when doing status numbered Enable logs sudo ufw logging on The logs are stored under /var/log/ufw.log\nReset UFW sudo ufw reset  If you liked this, consider sending a tip by ko-fi from the button below, and if you want to send me any feedback, you can reach me by email. \n",
+  "articleBody": "This guide is to make the initial steps from formating the microSD card to having ssh access to a headless Raspberry Pi.\nHeadless Raspberry Pi Fresh Installation Install the rpi-imager. Choose the Raspberry Pi OS Lite (64-bit) Select the microSD card and Write Prepare the microSD card Before the first boot the microSD card needs a user account and the SSH connection enabled.\nUser account Add a userconf.txt file in the boot folder. In the file include: username:password (your username, followed by a colon, followed by the encrypted password)\nTo generate the encrypted password:\necho 'mypassword' | openssl passwd -6 -stdin Enable SSH Add an empty ssh file in the boot folder Web Server is available at http://localhost:1313/ (bind address 127.0.0.1) Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)\nBoot and SSH into the Raspberry Pi Insert the microSD card and boot the Raspberry Pi with an ethernet cable connected.\nConnect with ssh:\nssh username@192.168.x.x Adjustments after first boot Change default ssh port sudo nano /etc/ssh/sshd_config Uncomment the #22 and change it to the desired port (i.e. 2234)\nRestart SSH sudo systemctl restart ssh Exit \u0026 connect with ssh again:\nexit ssh username@192.168.x.x -p 2234 Install Firewall UFW sudo apt install ufw Allow a port sudo ufw allow 2234 Deny a port sudo ufw deny 22 Limit a port sudo ufw limit ssh/tcp Start UFW sudo ufw enable Firewall status sudo ufw status #add `verbose` for more info or `numbered` for id numbers Delete rules sudo ufw delete x #where `x` is the number id when doing status numbered Enable logs sudo ufw logging on The logs are stored under /var/log/ufw.log\nReset UFW sudo ufw reset If you liked this, consider sending a tip by ko-fi from the button below, and if you want to send me any feedback, you can reach me by email. ",
   "wordCount" : "306",
   "inLanguage": "en",
   "datePublished": "2022-04-17T23:06:05+02:00",
@@ -313,7 +313,7 @@ ssh username@192.168.x.x -p 2234
 <h4 id="reset-ufw">Reset UFW<a hidden class="anchor" aria-hidden="true" href="#reset-ufw">#</a></h4>
 <pre tabindex="0"><code>sudo ufw reset
 </code></pre><hr>
-<p>If you liked this, consider sending a tip by ko-fi from the button below, and if you want to send me any feedback, you can reach me by <a href="mailto:emailme@al3xis.slmail.me">email</a>.
+<p>If you liked this, consider sending a tip by ko-fi from the button below, and if you want to send me any feedback, you can reach me by <a href="mailto:emailme@al3xis.xyz">email</a>.
 <a href="https://ko-fi.com/V7V1CFV13"><img loading="lazy" src="https://ko-fi.com/img/githubbutton_sm.svg" alt="ko-fi"  />
 </a></p>
 
@@ -375,7 +375,7 @@ ssh username@192.168.x.x -p 2234
     </main>
     
 <footer class="footer">
-    <span>&copy; 2022 <a href="https://al3xis.xyz/">Al3xis.xyz</a></span>
+    <span>&copy; 2023 <a href="https://al3xis.xyz/">Al3xis.xyz</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
