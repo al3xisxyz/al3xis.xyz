@@ -71,9 +71,23 @@ params:
     homeInfoParams:
         Title: "Welcome! \U0001F44B"
         Content: >
-            All the XYZs by **Al3xis!**<br>
-            This blog is built with the [Hugo - Static Site Generator](https://gohugo.io/).<br>
-            Topics covered: Web development, Linux tips, Homelab setup guides, Projects on Raspberry Pi, Garmin watchfaces and Other random stuff...
+            All the XYZs by **Al3xis!**
+            
+            This blog is built with the [Hugo - Static Site Generator](https://gohugo.io/).
+            
+            Topics covered:
+            
+            - ► Web development
+            
+            - ► Linux tips
+            
+            - ► Homelab setup guides
+            
+            - ► Projects on Raspberry Pi
+            
+            - ► Garmin watchfaces
+            
+            - ► Other random stuff
 
     socialIcons:
         #- name: twitter
