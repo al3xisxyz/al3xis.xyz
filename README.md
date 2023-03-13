@@ -1,5 +1,12 @@
 # al3xis.xyz
-### This is a blog about all the XYZs from Al3xis.
-A site built with the Hugo - Static Site Generator.
 
-Topics will range from web development, to Linux, personal projects such as Raspberry Pi tips, Garmin watchfaces and other random stuff...
+## Blog about all the XYZs from Al3xis.
+[al3xis.xyz](https://al3xis.xyz) is built with the [Hugo - Static Site Generator](https://gohugo.io/).
+
+## Topics
+- Web development
+- Linux tips
+- Homelab setup guides
+- Projects on Raspberry Pi 
+- Garmin watchfaces 
+- Other random stuff...
