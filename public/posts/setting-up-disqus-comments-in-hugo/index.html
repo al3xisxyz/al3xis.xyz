@@ -11,7 +11,7 @@
 <meta name="author" content="Al3xis">
 <link rel="canonical" href="https://al3xis.xyz/posts/setting-up-disqus-comments-in-hugo/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.b4e19c453811e60acfec1f00c15ac2be1c53f6ab90187e684358ce7faaf48bab.css" integrity="sha256-tOGcRTgR5grP7B8AwVrCvhxT9quQGH5oQ1jOf6r0i6s=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.b95bacdc39e37a332a9f883b1e78be4abc1fdca2bc1f2641f55e3cd3dabd4d61.js" integrity="sha256-uVus3DnjejMqn4g7Hni&#43;Srwf3KK8HyZB9V4809q9TWE="
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://al3xis.xyz/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://al3xis.xyz/favicon-16x16.png">
@@ -98,7 +98,7 @@
   "keywords": [
     "Hugo", "PaperMod", "Disqus", "Installation"
   ],
-  "articleBody": "Create comments file First create a html file in: layouts/partials/comments.html This is applicable mostly for the PaperMod theme. Other themes usually use a disqus.html file. It is important to name the file in the right way so your theme will recognise it. Check the documentation of your theme, in my case the PaperMod theme documentation about comments is here: https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-features/#comments\nHugo Disqus template Copy from Hugo repository tpl/tplimpl/embedded/templates/disqus.html\nAdd all the lines in the previously created comments.html file\nI replaced the lines: {{with .Params.disqus_identifier }}this.page.identifier = '{{ . }}';{{end}} {{with .Params.disqus_title }}this.page.title = '{{ . }}';{{end}} {{with .Params.disqus_url }}this.page.url = '{{ . | html }}';{{end}}\nWith these: this.page.url = '{{ .Permalink }}'; this.page.identifier = '{{ .Permalink }}'; this.page.title = '{{ .Title }}';\nIf you liked this, consider sending a tip by ko-fi from the button below, and if you want to send me any feedback, you can reach me by email. ",
+  "articleBody": "Create comments file First create a html file in: layouts/partials/comments.html This is applicable mostly for the PaperMod theme. Other themes usually use a disqus.html file. It is important to name the file in the right way so your theme will recognise it. Check the documentation of your theme, in my case the PaperMod theme documentation about comments is here: https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-features/#comments\nHugo Disqus template Copy from Hugo repository tpl/tplimpl/embedded/templates/disqus.html\nAdd all the lines in the previously created comments.html file\nI replaced the lines: {{with .Params.disqus_identifier }}this.page.identifier = '{{ . }}';{{end}} {{with .Params.disqus_title }}this.page.title = '{{ . }}';{{end}} {{with .Params.disqus_url }}this.page.url = '{{ . | html }}';{{end}}\nWith these: this.page.url = '{{ .Permalink }}'; this.page.identifier = '{{ .Permalink }}'; this.page.title = '{{ .Title }}';\n If you liked this, consider sending a tip by ko-fi from the button below, and if you want to send me any feedback, you can reach me by email. \n",
   "wordCount" : "151",
   "inLanguage": "en",
   "datePublished": "2021-01-03T16:50:07+01:00",
@@ -197,7 +197,7 @@
     <div class="post-description">
       This guide applies to Hugo themes, such as the PaperMod theme. Depending on your Hugo theme, setting up Disqus or other comment services can differ but it will be very similar to this.
     </div>
-    <div class="post-meta"><span title='2021-01-03 16:50:07 +0100 CET'>January 3, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Al3xis
+    <div class="post-meta"><span title='2021-01-03 16:50:07 +0100 +0100'>January 3, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Al3xis
 
 </div>
   </header> 
@@ -209,13 +209,13 @@ This is applicable mostly for the PaperMod theme. Other themes usually use a dis
 <p>Copy from Hugo repository <a href="https://github.com/gohugoio/hugo/blob/edc5c4741caaee36ba4d42b5947c195a3e02e6aa/tpl/tplimpl/embedded/templates/disqus.html">tpl/tplimpl/embedded/templates/disqus.html</a></p>
 <p>Add all the lines in the previously created <code>comments.html</code> file</p>
 <p>I replaced the lines:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{{with .Params.disqus_identifier }}this.page.identifier = &#39;{{ . }}&#39;;{{end}}
-</span></span><span style="display:flex;"><span>{{with .Params.disqus_title }}this.page.title = &#39;{{ . }}&#39;;{{end}}
-</span></span><span style="display:flex;"><span>{{with .Params.disqus_url }}this.page.url = &#39;{{ . | html  }}&#39;;{{end}}</span></span></code></pre></div></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{with .Params.disqus_identifier }}this.page.identifier = &#39;{{ . }}&#39;;{{end}}
+{{with .Params.disqus_title }}this.page.title = &#39;{{ . }}&#39;;{{end}}
+{{with .Params.disqus_url }}this.page.url = &#39;{{ . | html  }}&#39;;{{end}}</code></pre></div></p>
 <p>With these:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>this.page.url = &#39;{{ .Permalink }}&#39;;
-</span></span><span style="display:flex;"><span>this.page.identifier = &#39;{{ .Permalink }}&#39;;
-</span></span><span style="display:flex;"><span>this.page.title = &#39;{{ .Title }}&#39;;</span></span></code></pre></div></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">this.page.url = &#39;{{ .Permalink }}&#39;;
+this.page.identifier = &#39;{{ .Permalink }}&#39;;
+this.page.title = &#39;{{ .Title }}&#39;;</code></pre></div></p>
 <hr>
 <p>If you liked this, consider sending a tip by ko-fi from the button below, and if you want to send me any feedback, you can reach me by <a href="mailto:emailme@al3xis.xyz">email</a>.
 <a href="https://ko-fi.com/V7V1CFV13"><img loading="lazy" src="https://ko-fi.com/img/githubbutton_sm.svg" alt="ko-fi"  />
