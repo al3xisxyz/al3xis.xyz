@@ -5,22 +5,49 @@
     <link>https://al3xis.xyz/tags/</link>
     <description>Recent content in Tags on Al3xis.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 17 Apr 2022 23:06:05 +0200</lastBuildDate><atom:link href="https://al3xis.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Mar 2023 16:00:00 +0000</lastBuildDate><atom:link href="https://al3xis.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git</title>
+      <link>https://al3xis.xyz/tags/git/</link>
+      <pubDate>Tue, 21 Mar 2023 16:00:00 +0000</pubDate>
+      
+      <guid>https://al3xis.xyz/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Github</title>
+      <link>https://al3xis.xyz/tags/github/</link>
+      <pubDate>Tue, 21 Mar 2023 16:00:00 +0000</pubDate>
+      
+      <guid>https://al3xis.xyz/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gitlab</title>
+      <link>https://al3xis.xyz/tags/gitlab/</link>
+      <pubDate>Tue, 21 Mar 2023 16:00:00 +0000</pubDate>
+      
+      <guid>https://al3xis.xyz/tags/gitlab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SSH</title>
+      <link>https://al3xis.xyz/tags/ssh/</link>
+      <pubDate>Tue, 21 Mar 2023 16:00:00 +0000</pubDate>
+      
+      <guid>https://al3xis.xyz/tags/ssh/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Raspberry Pi</title>
       <link>https://al3xis.xyz/tags/raspberry-pi/</link>
       <pubDate>Sun, 17 Apr 2022 23:06:05 +0200</pubDate>
       
       <guid>https://al3xis.xyz/tags/raspberry-pi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Git</title>
-      <link>https://al3xis.xyz/tags/git/</link>
-      <pubDate>Tue, 16 Feb 2021 11:50:27 +0100</pubDate>
-      
-      <guid>https://al3xis.xyz/tags/git/</guid>
       <description></description>
     </item>
     
